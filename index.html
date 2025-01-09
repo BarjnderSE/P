@@ -35,7 +35,7 @@
                         <p>Tech-Mind Innovator</p></span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-3 small fw-bolder">
                             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                        
                             <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
@@ -48,145 +48,363 @@
 
               
             </nav>
-            <header class="py-5">
-                <div class="container px-5 pb-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-xxl-5">
-                            <!-- Header text content-->
-                            <div class="text-center text-xxl-start">
-                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
-                                    <div class="text-uppercase"> &middot; Insightful Engineer &middot;</div>
-                                </div>
-                                <div class="fs-3 fw-light text-muted"></div>
-                                <h1 class="display-3 fw-bolder mb-5 dance"><span class="text-gradient d-inline">Software Engineer and Data Analytics Expertise</span></h1>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                    <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="projects.html">Projects</a>
-                                </div>
+          <!-- Header Section -->
+          <header class="py-5">
+            <div class="container px-5 pb-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-xxl-5">
+                        <!-- Header text content-->
+                        <div class="text-center text-xxl-start">
+                            <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
+                                <div class="text-uppercase"> &middot; Transforming Ideas into Reality &middot;</div>
+                            </div>
+                            <div class="fs-3 fw-light text-muted"></div>
+                            <h1 class="display-3 fw-bolder mb-5">
+                                <span class="text-gradient d-inline animated-text">Software Engineer</span>
+                               
+                                <span class="text-gradient d-inline animated-text">Data Storyteller</span>
+                       
+                                
+                                <span class="text-gradient d-inline animated-text">Power BI Developer</span>
+                               
+                          
+                              
+                             
+                      
+                                <span class="text-gradient d-inline animated-text">.NET Developer</span>
+                             
+                                <span class="text-gradient d-inline animated-text">Data Analyst</span>
+                             
+                            </h1>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                                <a class="btn btn-danger btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="projects.html">Projects</a>
                             </div>
                         </div>
-                        <div class="col-xxl-7">
-                            <!-- Header profile picture-->
-                            <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-                                <div class="profile">
-                                    <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
-                                    <!-- Watch a tutorial on how to do this on YouTube (link)-->
-                                    <img class="profile-img" src="assets/pf.jpg" alt="Profile Picture" />
-                                </div>
+                    </div>
+                    <div class="col-xxl-7">
+                        <!-- Profile Picture-->
+                        <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+                            <div class="profile">
+                                <img class="profile-img" src="assets/pf.jpg" alt="Profile Picture" />
                             </div>
                         </div>
                     </div>
                 </div>
-            </header>
-            
+            </div>
+        </header>
+        
+        <!-- CSS for Animations -->
+        <style>
+            /* Ensure each word has space and no overlap */
+            h1 {
+                position: relative;
+                height: 70px; /* Adjust height to match size of words */
+                line-height: 70px; /* Vertical centering */
+                overflow: hidden;
+            }
+        
+            .animated-text {
+                opacity: 0;
+                position: absolute;
+                white-space: nowrap;
+                font-size: 3rem; /* Adjust size of text */
+                animation: fadeInOut 18s ease-in-out infinite;
+            }
+        
+            /* Keyframes for sequential fading effect */
+            @keyframes fadeInOut {
+                0%, 6% { opacity: 1; transform: translateY(0); }
+                12%, 18% { opacity: 0; transform: translateY(-30px); }
+                18% { opacity: 0; transform: translateY(30px); }
+            }
+        
+            /* Delays to sequence the words properly */
+            .animated-text:nth-child(1) { animation-delay: 0s; }
+            .animated-text:nth-child(2) { animation-delay: 3s; }
+            .animated-text:nth-child(3) { animation-delay: 6s; }
+            .animated-text:nth-child(4) { animation-delay: 9s; }
+            .animated-text:nth-child(5) { animation-delay: 12s; }
+            .animated-text:nth-child(6) { animation-delay: 15s; }
+            .animated-text:nth-child(7) { animation-delay: 18s; }
+            .animated-text:nth-child(8) { animation-delay: 21s; }
+            .animated-text:nth-child(9) { animation-delay: 24s; }
+            .animated-text:nth-child(10) { animation-delay: 27s; }
+            .animated-text:nth-child(11) { animation-delay: 30s; }
+            .animated-text:nth-child(12) { animation-delay: 33s; }
+            .animated-text:nth-child(13) { animation-delay: 36s; }
+            .animated-text:nth-child(14) { animation-delay: 39s; }
+            .animated-text:nth-child(15) { animation-delay: 42s; }
+            .animated-text:nth-child(16) { animation-delay: 45s; }
+        
+            /* Adjust the space between the words */
+            .btn {
+                margin-top: 30px;
+            }
+        </style>
+        
 
 
                  <!-- Main Content -->
-    <main>
-        <!-- Skills Section -->
-        <section id="skills" class="bg-light py-5">
-            <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-xxl-8">
-                        <div class="text-center my-5">
-                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Skills</span></h2>
-                            <p class="text-muted mb-0">Here are some of my key skills:</p>
-                        </div>
-                        <div class="row gx-5 justify-content-center">
-                            <div class="col mb-5 text-center">
-                                <div class="text-uppercase fw-bold text-muted">Excel</div>
-                                <img src="assets/excel.png" alt="Excel" style="max-width: 150px;">
-                            </div>
-                            <div class="col mb-5 text-center">
-                                <div class="text-uppercase fw-bold text-muted">PowerBI</div>
-                                <img src="assets/powerbi.png" alt="Power BI" style="max-width: 150px;">
-                            </div>
-                            <div class="col mb-5 text-center">
-                                <div class="text-uppercase fw-bold text-muted">Tableau</div>
-                                <img src="assets/tableau.png" alt="Tableau" style="max-width: 150px;">
-                            </div>
-                            <div class="col mb-5 text-center">
-                                <div class="text-uppercase fw-bold text-muted">Python</div>
-                                <img src="assets/python.png" alt="SQL" style="max-width: 150px;">
-                            </div>
-                            <div class="col mb-5 text-center">
-                                <div class="text-uppercase fw-bold text-muted">React</div>
-                                <img src="assets/react.png" alt="SQL" style="max-width: 150px;">
-                            </div>
-                            <div class="col mb-5 text-center">
-                                <div class="text-uppercase fw-bold text-muted">HTML</div>
-                                <img src="assets/Untitled.png" alt="SQL" style="max-width: 150px;">
-                            </div>
-                            <div class="col mb-5 text-center">
-                                <div class="text-uppercase fw-bold text-muted">CSS</div>
-                                <img src= "assets/Untitled1.png" alt="SQL" style="max-width: 150px;">
-                            </div>
-                            <div class="col mb-5 text-center">
-                                <div class="text-uppercase fw-bold text-muted">C#</div>
-                                <img src="assets/Untitled3.png" alt="SQL" style="max-width: 150px;">
-                            </div>
-                            <div class="col mb-5 text-center">
-                                <div class="text-uppercase fw-bold text-muted">.net core</div>
-                                <img src="assets/dotnet.png" alt="SQL" style="max-width: 150px;">
-                            </div>
-                            <div class="col mb-5 text-center">
-                                <div class="text-uppercase fw-bold text-muted">Azure</div>
-                                <img src="assets/Azure.png" alt="Python" style="max-width: 150px;">
-                            </div>
-                            <div class="col mb-5 text-center">
-                                <div class="text-uppercase fw-bold text-muted">SQL</div>
-                                <img src="assets/sql.png" alt="SQL" style="max-width: 150px;">
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-6">
-                                <hr style="border-top: 2px solid #ddd;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="bg-light py-5">
-            <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-xxl-8">
-                        <div class="text-center my-5">
-                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
-                            <p class="lead fw-light mb-4">My name is <bold>Barjinder Singh and I help brands grow.</p>
-                            <p class="text-muted">I am passionate about Software with a keen interest in leveraging technology to solve complex problems. My background  has equipped me with a solid foundation in Software Development. I thrive in collaborative environments and enjoy exploring new tools to enhance efficiency and decision-making.</p>
-                            <div class="d-flex justify-content-center fs-2 gap-4">
-                                <a class="text-gradient" href="><i class="bi bi-linkedin"></i></a>
-                                <a class="text-gradient" href="#!"><i class="bi bi-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-white py-4 mt-auto">
+    <!-- Main Content -->
+<!-- Main Content -->
+<main>
+    <!-- Skills Section with Animated Background -->
+    <section id="skills" class="py-5">
         <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2024</div></div>
-                <div class="col-auto">
-                    <a class="small" href="#!">Privacy</a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="#!">Terms</a>
-                    <span class="mx-1">&middot;</span>
-                    <a class="small" href="#!">Contact</a>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-xxl-8">
+                    <div class="text-center my-5">
+                        <h2 class="display-5 fw-bolder text-gradient"><span>Skills</span></h2>
+                        <p class="text-muted mb-0">Here are some of my key skills:</p>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <!-- Skill Items with Dancing Animation -->
+                        <div class="col mb-5 text-center skill-item">
+                            <div class="text-uppercase fw-bold text-muted">Excel</div>
+                            <img src="assets/excel.png" alt="Excel" class="skill-img dance-animation">
+                        </div>
+                        <div class="col mb-5 text-center skill-item">
+                            <div class="text-uppercase fw-bold text-muted">PowerBI</div>
+                            <img src="assets/powerbi.png" alt="Power BI" class="skill-img dance-animation">
+                        </div>
+                        <div class="col mb-5 text-center skill-item">
+                            <div class="text-uppercase fw-bold text-muted">Tableau</div>
+                            <img src="assets/tableau.png" alt="Tableau" class="skill-img dance-animation">
+                        </div>
+                        <div class="col mb-5 text-center skill-item">
+                            <div class="text-uppercase fw-bold text-muted">Python</div>
+                            <img src="assets/python.png" alt="Python" class="skill-img dance-animation">
+                        </div>
+                        <div class="col mb-5 text-center skill-item">
+                            <div class="text-uppercase fw-bold text-muted">React</div>
+                            <img src="assets/react.png" alt="React" class="skill-img dance-animation">
+                        </div>
+                        <div class="col mb-5 text-center skill-item">
+                            <div class="text-uppercase fw-bold text-muted">HTML</div>
+                            <img src="assets/Untitled.png" alt="HTML" class="skill-img dance-animation">
+                        </div>
+                        <div class="col mb-5 text-center skill-item">
+                            <div class="text-uppercase fw-bold text-muted">CSS</div>
+                            <img src="assets/Untitled1.png" alt="CSS" class="skill-img dance-animation">
+                        </div>
+                        <div class="col mb-5 text-center skill-item">
+                            <div class="text-uppercase fw-bold text-muted">C#</div>
+                            <img src="assets/Untitled3.png" alt="C#" class="skill-img dance-animation">
+                        </div>
+                        <div class="col mb-5 text-center skill-item">
+                            <div class="text-uppercase fw-bold text-muted">.net core</div>
+                            <img src="assets/dotnet.png" alt=".NET Core" class="skill-img dance-animation">
+                        </div>
+                        <div class="col mb-5 text-center skill-item">
+                            <div class="text-uppercase fw-bold text-muted">Azure</div>
+                            <img src="assets/Azure.png" alt="Azure" class="skill-img dance-animation">
+                        </div>
+                        <div class="col mb-5 text-center skill-item">
+                            <div class="text-uppercase fw-bold text-muted">SQL</div>
+                            <img src="assets/sql.png" alt="SQL" class="skill-img dance-animation">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
+
+    <!-- About Section with Animated Background -->
+    <section id="about" class="py-5">
+        <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-xxl-8">
+                    <div class="text-center my-5">
+                        <h2 class="display-5 fw-bolder" style="color:hsl(0, 14.30%, 93.10%);"><span>About Me</span></h2>
+                        <p class="lead fw-light mb-4" style="color:rgb(231, 236, 229);">My name is <strong></strong> and I help brands grow.</p>
+                        <p class="text-muted" style="color:rgb(139, 59, 63);">I am passionate about Software with a keen interest in leveraging technology to solve complex problems. My background has equipped me with a solid foundation in Software Development. I thrive in collaborative environments and enjoy exploring new tools to enhance efficiency and decision-making.</p>
+                        <div class="d-flex justify-content-center fs-2 gap-4">
+                            <a href="https://www.linkedin.com" target="_blank" style="color: #0077b5;">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://github.com" target="_blank" style="color: #0077b5;">
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Adding Hover Effect Inline -->
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('mouseover', function() {
+                link.style.color = '#00aced'; /* Lighter blue on hover */
+            });
+            link.addEventListener('mouseout', function() {
+                link.style.color = '#0077b5'; /* Reset to original blue */
+            });
+        });
+    </script>
+    
+</main>
+
+<!-- CSS for Animations and Colorful Background -->
+<style>
+    /* Animated Background for Skills and About Section */
+    #skills, #about {
+        background: linear-gradient(45deg,  #f061b0, #ffbc00);
+        background-size: 400% 400%;
+        animation: gradientShift 10s ease infinite;
+    }
+
+    @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    /* Dance Animation for Images */
+    .dance-animation {
+        animation: dance 2s infinite alternate;
+        display: inline-block;
+    }
+
+    @keyframes dance {
+        0% {
+            transform: rotate(0deg);
+        }
+        25% {
+            transform: rotate(10deg);
+        }
+        50% {
+            transform: rotate(0deg);
+        }
+        75% {
+            transform: rotate(-10deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    /* Skills Section Hover Effect */
+    .skill-item {
+        position: relative;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .skill-item:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .skill-img {
+        max-width: 150px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .skill-img:hover {
+        transform: rotate(360deg);
+    }
+
+    /* About Section Animation */
+    #about p {
+        opacity: 0;
+        animation: fadeIn 2s forwards;
+    }
+
+    #about .d-flex a {
+        font-size: 2rem;
+        transition: color 0.3s ease;
+    }
+
+    #about .d-flex a:hover {
+        color: #007bff;
+    }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+</style>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer class="bg-gradient py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <!-- Copyright Section with Animation -->
+            <div class="col-auto">
+                <div class="small m-0 text-muted fadeIn">
+                    Copyright &copy; Your Website 2024
+                </div>
+            </div>
+            <!-- Footer Links with Hover Animation -->
+            <div class="col-auto">
+                <a class="small footer-link" href="#!">Privacy</a>
+                <span class="mx-1 text-muted">&middot;</span>
+                <a class="small footer-link" href="#!">Terms</a>
+                <span class="mx-1 text-muted">&middot;</span>
+                <a class="small footer-link" href="#!">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- CSS for Footer Styling and Animation -->
+<style>
+    /* Gradient Background for Footer */
+    footer.bg-gradient {
+        background: linear-gradient(45deg, #ff6a00, #ff3a3a, #f061b0, #ffbc00);
+        background-size: 400% 400%;
+        animation: gradientShiftFooter 10s ease infinite;
+        color: white;
+    }
+
+    /* Animation for gradient shift */
+    @keyframes gradientShiftFooter {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    /* Fade-In Animation for Copyright */
+    .fadeIn {
+        opacity: 0;
+        animation: fadeIn 2s forwards;
+    }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    /* Footer Link Hover Effect */
+    .footer-link {
+        color: white;
+        transition: color 0.3s ease;
+    }
+
+    .footer-link:hover {
+        color: #ff6a00; /* Or any other hover color you like */
+    }
+
+    /* Spacer for Footer Links */
+    .mx-1 {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+</style>
+
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+  
+</body>
+</html>
+
+
   
 </body>
 </html>
