@@ -15,39 +15,42 @@
         /* Custom Styles for Improved Layout */
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #f4f7f6; /* Light grey background */
+            background-color: rgb(1, 54, 23) solid; /* Green background */
             margin: 0;
             padding: 0;
         }
-
+    
         .navbar {
-            background-color: #007bff;
-        }
+            background-color: 
+                linear-gradient(90deg, #38a169, #f6ad55);
 
+            };
+        }
+    
         .navbar a, .navbar-toggler-icon {
             color: white;
         }
-
+    
         .navbar a:hover {
             color: #ffb3b3;
         }
-
+    
         .btn-outline-primary {
-            border: 2px solid #007bff;
-            color: #007bff;
+            border: 2px solid green;
+            color: green;
             transition: all 0.3s ease;
         }
-
+    
         .btn-outline-primary:hover {
-            background-color: #007bff;
-            color: white;
+            background-color:rgb(1, 54, 23);
+            color: green;
         }
-
+    
         .card {
             display: flex;
             flex-direction: column;
             height: 100%;
-            background-color: #ffffff;
+            background-color:rgb(1, 54, 23);
             border: none;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
@@ -55,78 +58,91 @@
             margin-bottom: 20px;
             transition: transform 0.3s ease;
         }
-
+    
         .card:hover {
             transform: translateY(-10px);
         }
-
+    
         .card-img-top {
             object-fit: cover;
             height: 200px;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid rgb(1, 54, 23) solid;
         }
-
+    
         .card-body {
             display: flex;
             flex-direction: column;
             padding: 20px;
             height: 100%;
-            background-color: #f9f9f9;
+            background-color:rgb(240, 228, 228) ;
         }
-
+    
         .card-title {
             font-weight: 600;
             font-size: 1.1rem;
-            color: #333;
+            color:rgb(1, 54, 23) solid;
             margin-bottom: 15px;
         }
-
+    
         .card-text {
             font-size: 0.95rem;
             color: #666;
             margin-bottom: 20px;
         }
-
+    
         .btn-primary {
-            background-color: #007bff;
-            color: white;
+            background: linear-gradient(90deg, #2f855a, #dd6b20);
+            transform: translateY(-5px);
             border: none;
             padding: 10px;
             border-radius: 5px;
         }
+        body{
+            background: linear-gradient(90deg, #38a169, #f6ad55);
 
-        .btn-primary:hover {
-            background-color: #0056b3;
         }
-
+    
+        .btn-primary:hover {
+            background-color:rgb(0, 179, 134);
+        }
+    
         .container {
             padding-top: 50px;
             padding-bottom: 50px;
         }
-
+    
         .tag-filter {
             border-radius: 20px;
             margin: 5px;
         }
-
+    
         .project-card-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 30px;
         }
-
+    
         .text-center {
             margin-bottom: 30px;
         }
-
+    
         .card-body {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
+    
+        /* Gradient Heading */
+        h1, h2, h3, h4, h5, h6 {
+            background: linear-gradient(45deg, #4caf50, #66bb6a, #81c784, #43a047); /* Gradient green */
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
     </style>
+    
 </head>
-<body class="d-flex flex-column h-100 bg-light">
+<body class="d-flex flex-column  h-100 bg-light">
 
     <main class="flex-shrink-0">
         <nav class="navbar navbar-expand-lg navbar-light py-3">
@@ -151,9 +167,13 @@
                 <div class="text-center mb-4">
                     <button class="btn btn-outline-primary tag-filter" data-filter="all">All</button>
                     <button class="btn btn-outline-primary tag-filter" data-filter="dotnet">.NET MVC</button>
+                
+                 
                     <button class="btn btn-outline-primary tag-filter" data-filter="razor">Razor</button>
                     <button class="btn btn-outline-primary tag-filter" data-filter="bootstrap">Bootstrap</button>
                     <button class="btn btn-outline-primary tag-filter" data-filter="sql/python">SQL/Python</button>
+                    <button class="btn btn-outline-primary tag-filter" data-filter="ml">Data Science/ML</button>
+
                     <button class="btn btn-outline-primary tag-filter" data-filter="excel">Excel</button>
                     <button class="btn btn-outline-primary tag-filter" data-filter="tableau">Tableau</button>
                     <button class="btn btn-outline-primary tag-filter" data-filter="power-bi">Power BI</button>
@@ -244,6 +264,22 @@
                     detailsPage: ''
                 },
                 {
+                    name: 'Data Projects',
+                    description: 'SQL/PYTHON Analysis and Vizualization.',
+                    skills: ['sql/python'],
+                    image: 'details/sp.webp',
+                    githubLink: 'https://github.com/BarjnderSE/Data-Analysis-BI-Portfolio.git',
+                    detailsPage: ''
+                },
+                {
+                    name: 'Data Science/ML',
+                    description: 'Data-Science/ML.',
+                    skills: ['ml'],
+                    image: 'details/ds1.jpg',
+                    githubLink: 'https://github.com/BarjnderSE/Data-science/tree/e587e839ed5cdcbfe46a153dd9d00b0e3e928899',
+                    detailsPage: ''
+                },
+                {
                     name: 'Churn Analysis',
                     description: 'Bank Churn Analysis.',
                     skills: ['power-bi'],
@@ -313,7 +349,7 @@
                 const viewLink = project.detailsPage || project.githubLink;
                 return `
                     <div class="col">
-                        <div class="card shadow-sm border-0">
+                        <div class="card shadow-smtextborder-0">
                             <img src="${project.image}" class="card-img-top" alt="${project.name}">
                             <div class="card-body">
                                 <h5 class="card-title">${project.name}</h5>
